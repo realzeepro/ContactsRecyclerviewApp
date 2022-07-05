@@ -40,6 +40,8 @@ public class myadapter extends RecyclerView.Adapter<myviewholder>
 
        holder.t1.setText(data.get(position).getHeader());
        holder.t2.setText(data.get(position).getDesc());
+       holder.t3.setText(data.get(position).getEmail());
+        holder.t4.setText(data.get(position).getContact());
        holder.img.setImageResource(data.get(position).getImgname());
 
        holder.img.setOnClickListener(new View.OnClickListener() {
@@ -50,8 +52,11 @@ public class myadapter extends RecyclerView.Adapter<myviewholder>
                  intent.putExtra("imagename",temp.getImgname());
                  intent.putExtra("header",temp.getHeader());
                  intent.putExtra("desc",temp.getDesc());
+                 intent.putExtra("email",temp.getEmail());
+               intent.putExtra("contact",temp.getContact());
                  intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                  context.startActivity(intent);
+
            }
        });
 

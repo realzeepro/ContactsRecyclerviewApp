@@ -5,24 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
     tools:context=".Main2Activity">
 
-    <ImageView
+
+
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/desc_img"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:src="@mipmap/ic_launcher" />
+        app:lottie_rawRes="@raw/studentanimatedzip"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
 
     <TextView
         android:id="@+id/desc_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="Dummy Header"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -30,9 +35,41 @@
         android:id="@+id/desc_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="Dummy Description"
+        android:textColor="#fff"
         android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/desc_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Dummy Email"
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/desc_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Dummy Contact"
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Call"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

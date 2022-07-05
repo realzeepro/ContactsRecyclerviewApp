@@ -9,36 +9,70 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="111dp"
         android:padding="16dp">
+
+
+
 
         <ImageView
             android:id="@+id/img1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
+            android:layout_width="82dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
             android:src="@mipmap/ic_launcher" />
 
-          <TextView
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_centerHorizontal="true"
-              android:id="@+id/t1"
-              android:text="This is Header Text"
-              android:textStyle="bold"
-              android:textSize="25dp"
-              android:layout_below="@+id/img1"
-              android:textColor="#000"/>
-
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/img1"
+            android:text="This is Header Text"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/t2"
-            android:layout_width="match_parent"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/t1"
-            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img1"
             android:text="This is Description Text"
-            android:textSize="20dp" />
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/img1"
+            android:text="This is Email Text"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img1"
+            android:text="This is Contact Text"
+            android:textAlignment="center"
+            android:textSize="16dp" />
 
     </RelativeLayout>
 
